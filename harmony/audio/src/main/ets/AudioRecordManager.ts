@@ -225,6 +225,8 @@ export class AudioRecordManager {
     switch (fileFormat) {
       case 'm4a':
         return media.ContainerFormatType.CFT_MPEG_4A;
+	    case 'aac':
+        return media.ContainerFormatType.CFT_AAC;
       default:
         this.showToast(`Using media.ContainerFormatType.CFT_MPEG_4A : ${media.ContainerFormatType.CFT_MPEG_4A}.`);
         return media.ContainerFormatType.CFT_MPEG_4A;
